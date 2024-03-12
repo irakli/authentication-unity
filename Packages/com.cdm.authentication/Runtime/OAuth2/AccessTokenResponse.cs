@@ -29,6 +29,13 @@ namespace Cdm.Authentication.OAuth2
         [Preserve]
         [DataMember(IsRequired = true, Name = "token_type")]
         public string tokenType { get; set; }
+        
+        /// <summary>
+        /// Gets or sets the id token.
+        /// </summary>
+        [Preserve]
+        [DataMember(Name = "id_token")]
+        public string idToken { get; set; }
 
         /// <summary>
         /// Gets or sets the lifetime in seconds of the access token.
